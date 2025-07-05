@@ -1,7 +1,7 @@
 version = 0.1
 
 [default.deploy.parameters]
-stack_name = "todo-list-aws"
+stack_name = "todo-stack"
 s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-hgwhprjqmlgt"
 s3_prefix = "todo-list-aws"
 region = "us-east-1"
@@ -11,7 +11,7 @@ parameter_overrides = 'Stage="staging"'
 [staging]
 [staging.deploy]
 [staging.deploy.parameters]
-stack_name = "todo-list-aws"
+stack_name = "todo-stack"
 s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-hgwhprjqmlgt"
 s3_prefix = "todo-list-aws"
 region = "us-east-1"
